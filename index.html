@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aditya Roy | Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      scroll-behavior: smooth;
+    }
+    .scroll-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #facc15;
+      color: black;
+      padding: 10px;
+      border-radius: 9999px;
+      cursor: pointer;
+      display: none;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-900 text-white font-sans">
+  <!-- Landing Page -->
+  <section class="h-screen flex flex-col justify-center items-center text-center px-4">
+    <img src="PortFollioProfile.webp" alt="Profile" class="w-32 h-32 rounded-full mb-4 border-4 border-yellow-500">
+    <h1 class="text-4xl md:text-6xl font-bold mb-2">Hi, I'm <span class="text-yellow-400">Aditya Kumar Roy</span></h1>
+    <p class="text-lg md:text-2xl mb-4">Full Stack Developer | ML Enthusiast</p>
+    <a href="#about" class="bg-yellow-500 text-black px-6 py-2 rounded hover:bg-yellow-400 transition">Explore More</a>
+    <a href="Aditya_Resume.pdf" download class="mt-4 inline-block text-yellow-400 underline">Download Resume</a>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-20 px-8 max-w-4xl mx-auto">
+    <h2 class="text-3xl font-semibold mb-6">About Me</h2>
+    <p class="text-lg">B.Tech in Computer Science (AI/ML) from NIET Greater Noida, Diploma in Electrical Engineering, and 10th from Golden Bell Public School (Bihar). Passionate about full-stack development and machine learning.</p>
+  </section>
+
+  <!-- Skills with Icons -->
+  <section class="py-20 bg-gray-800 px-8">
+    <h2 class="text-3xl font-semibold text-center mb-10">Skills</h2>
+    <div class="flex flex-wrap gap-6 justify-center text-4xl">
+      <i class="fab fa-python" title="Python"></i>
+      <i class="fab fa-js" title="JavaScript"></i>
+      <i class="fab fa-react" title="React JS"></i>
+      <i class="fab fa-node-js" title="Node JS"></i>
+      <i class="fas fa-database" title="MongoDB / SQL"></i>
+      <i class="fas fa-brain" title="Machine Learning"></i>
+      <i class="fas fa-chart-bar" title="Power BI / Tableau"></i>
+      <i class="fab fa-git-alt" title="Git"></i>
+      <i class="fab fa-github" title="GitHub"></i>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="py-20 px-8 max-w-5xl mx-auto">
+    <h2 class="text-3xl font-semibold text-center mb-10">Projects</h2>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="bg-gray-800 p-6 rounded shadow hover:scale-105 transform transition">
+        <h3 class="text-xl font-semibold mb-2">E-commerce Website</h3>
+        <p>Full-stack MERN + SQL app with filtering, cart, user authentication, and orders. <a href="#" class="text-yellow-400 underline ml-1">GitHub</a></p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded shadow hover:scale-105 transform transition">
+        <h3 class="text-xl font-semibold mb-2">Bitcoin Price Prediction</h3>
+        <p>ML models like LSTM, Random Forest for time series forecasting. <a href="#" class="text-yellow-400 underline ml-1">GitHub</a></p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded shadow hover:scale-105 transform transition">
+        <h3 class="text-xl font-semibold mb-2">Phishing Page Detector</h3>
+        <p>Streamlit + Flask app to detect phishing pages using ML models. <a href="#" class="text-yellow-400 underline ml-1">GitHub</a></p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded shadow hover:scale-105 transform transition">
+        <h3 class="text-xl font-semibold mb-2">Multi-Threaded Media Review System</h3>
+        <p>CLI-based system using Python multithreading for responsive reviews.</p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded shadow hover:scale-105 transform transition">
+        <h3 class="text-xl font-semibold mb-2">Advanced Real-Time Discussion Forum</h3>
+        <p>WebSocket-based forum with real-time messaging.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements -->
+  <section class="py-20 px-8 max-w-4xl mx-auto">
+    <h2 class="text-3xl font-semibold text-center mb-10">Achievements</h2>
+    <ul class="list-disc ml-5 text-lg">
+      <li>Top 5 finalist - Adobe India Hackathon 2025</li>
+      <li>Google Cloud Ready Facilitator Badge</li>
+      <li>Ranked in top 10% globally on LeetCode</li>
+    </ul>
+  </section>
+
+  <!-- Experience -->
+  <section class="py-20 bg-gray-800 px-8">
+    <h2 class="text-3xl font-semibold text-center mb-10">Experience</h2>
+    <div class="max-w-4xl mx-auto">
+      <div class="border-l-4 border-yellow-400 pl-4">
+        <h3 class="text-xl font-bold">Software Developer Intern - HashedBit Innovation</h3>
+        <p class="text-sm">Dec 2024 - Mar 2025</p>
+        <ul class="list-disc ml-5 mt-2">
+          <li>Built full-stack e-commerce app using React, Node.js, MySQL</li>
+          <li>Created RESTful APIs, managed CRUD ops, optimized backend queries</li>
+          <li>Worked with Git, Jira, and CI/CD tools in Agile sprints</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section class="py-20 px-8 max-w-4xl mx-auto">
+    <h2 class="text-3xl font-semibold text-center mb-10">Certifications</h2>
+    <ul class="list-disc ml-5 text-lg">
+      <li>Data Visualization – Coursera</li>
+      <li>React JS – Infosys Springboard</li>
+      <li>Deep Learning – Infosys Springboard</li>
+    </ul>
+  </section>
+
+  <!-- Contact -->
+  <section class="py-20 px-8 max-w-3xl mx-auto text-center">
+    <h2 class="text-3xl font-semibold mb-6">Get in Touch</h2>
+    <form id="contact-form" class="space-y-4 text-left max-w-md mx-auto">
+      <input type="text" name="user_name" placeholder="Your Name" class="w-full p-2 rounded bg-gray-800 border border-gray-600" required>
+      <input type="email" name="user_email" placeholder="Your Email" class="w-full p-2 rounded bg-gray-800 border border-gray-600" required>
+      <textarea name="message" rows="5" placeholder="Your Message" class="w-full p-2 rounded bg-gray-800 border border-gray-600" required></textarea>
+      <button type="submit" class="bg-yellow-500 text-black px-6 py-2 rounded hover:bg-yellow-400 transition">Send Message</button>
+    </form>
+    <p class="mt-6">📧 royadityaa003@gmail.com</p>
+    <p class="mb-2">🔗 <a href="https://www.linkedin.com/in/aditya-kumar-roy-667824316" class="text-yellow-400 underline" target="_blank">LinkedIn</a></p>
+    <p>👨‍💻 <a href="https://leetcode.com/u/AdityaRoy9003/" class="text-yellow-400 underline" target="_blank">LeetCode</a></p>
+  </section>
+
+  <div class="scroll-top" id="scrollTopBtn">⬆</div>
+
+  <script>
+    (function() {
+      emailjs.init("bpRuXYtIHVOgs2oaw");
+    })();
+
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      emailjs.sendForm('service_hntf1al', 'template_gpswlue', this)
+        .then(() => {
+          alert('Message sent successfully!');
+        }, (error) => {
+          alert('Failed to send message. Error: ' + JSON.stringify(error));
+        });
+      this.reset();
+    });
+
+    const scrollTopBtn = document.getElementById("scrollTopBtn");
+    window.onscroll = function () {
+      scrollTopBtn.style.display = window.scrollY > 300 ? "block" : "none";
+    };
+    scrollTopBtn.onclick = function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+
+    gsap.from("h1", { opacity: 0, y: -50, duration: 1 });
+    gsap.from("p", { opacity: 0, y: 20, duration: 1, delay: 0.5 });
+    gsap.from("a", { opacity: 0, scale: 0.9, duration: 1, delay: 1 });
+    gsap.utils.toArray("section").forEach((section, i) => {
+      gsap.from(section, {
+        opacity: 0,
+        y: 50,
+        duration: 1,
+        scrollTrigger: {
+          trigger: section,
+          start: "top 80%"
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
